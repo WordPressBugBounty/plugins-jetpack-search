@@ -4,19 +4,19 @@
 	"type": "jetpack-library",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"php": ">=7.0",
-		"automattic/jetpack-connection": "^4.0.0",
-		"automattic/jetpack-assets": "^2.3.7",
-		"automattic/jetpack-constants": "^2.0.4",
-		"automattic/jetpack-status": "^4.0.0",
-		"automattic/jetpack-config": "^2.0.4",
-		"automattic/jetpack-my-jetpack": "^4.35.1",
-		"automattic/jetpack-sync": "^3.10.0"
+		"php": ">=7.2",
+		"automattic/jetpack-connection": "^6.2.2",
+		"automattic/jetpack-assets": "^4.0.2",
+		"automattic/jetpack-constants": "^3.0.1",
+		"automattic/jetpack-status": "^5.0.1",
+		"automattic/jetpack-config": "^3.0.0",
+		"automattic/jetpack-my-jetpack": "^5.3.0",
+		"automattic/jetpack-sync": "^4.2.0"
 	},
 	"require-dev": {
-		"automattic/jetpack-changelogger": "^4.2.6",
+		"automattic/jetpack-changelogger": "^5.1.0",
 		"yoast/phpunit-polyfills": "^1.1.1",
-		"automattic/wordbless": "0.4.2"
+		"automattic/wordbless": "^0.4.2"
 	},
 	"suggest": {
 		"automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
@@ -40,6 +40,7 @@
 		"phpunit": [
 			"./vendor/phpunit/phpunit/phpunit --colors=always"
 		],
+		"test-coverage": "pnpm concurrently --names php,js 'php -dpcov.directory=. ./vendor/bin/phpunit --coverage-php \"$COVERAGE_DIR/php.cov\"' 'pnpm:test-coverage'",
 		"test-js": [
 			"pnpm run test"
 		],
@@ -63,7 +64,7 @@
 			"link-template": "https://github.com/Automattic/jetpack-search/compare/v${old}...v${new}"
 		},
 		"branch-alias": {
-			"dev-trunk": "0.45.x-dev"
+			"dev-trunk": "0.47.x-dev"
 		},
 		"version-constants": {
 			"::VERSION": "src/class-package.php"
