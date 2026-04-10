@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2
+class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ6_0_0
 {
     public static $files = array (
         '3773ef3f09c37da5478d578e32b03a4b' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-assets/actions.php',
@@ -12,14 +12,14 @@ class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2
     );
 
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'A' =>
         array (
             'Automattic\\Jetpack\\Autoloader\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Automattic\\Jetpack\\Autoloader\\' => 
+        'Automattic\\Jetpack\\Autoloader\\' =>
         array (
             0 => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src',
         ),
@@ -86,6 +86,7 @@ class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2
         'Automattic\\Jetpack\\Connection\\Utils' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/class-utils.php',
         'Automattic\\Jetpack\\Connection\\Webhooks' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/class-webhooks.php',
         'Automattic\\Jetpack\\Connection\\Webhooks\\Authorize_Redirect' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/webhooks/class-authorize-redirect.php',
+        'Automattic\\Jetpack\\Connection\\Wpcom_Connector' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/connectors/class-wpcom-connector.php',
         'Automattic\\Jetpack\\Connection\\XMLRPC_Async_Call' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/class-xmlrpc-async-call.php',
         'Automattic\\Jetpack\\Connection\\XMLRPC_Connector' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection/src/class-xmlrpc-connector.php',
         'Automattic\\Jetpack\\Constants' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-constants/src/class-constants.php',
@@ -197,6 +198,7 @@ class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2
         'Automattic\\Jetpack\\Stats\\Package_Version' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-package-version.php',
         'Automattic\\Jetpack\\Stats\\REST_Provider' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-rest-provider.php',
         'Automattic\\Jetpack\\Stats\\Tracking_Pixel' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-tracking-pixel.php',
+        'Automattic\\Jetpack\\Stats\\Transient_Cleanup' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-transient-cleanup.php',
         'Automattic\\Jetpack\\Stats\\WPCOM_Stats' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-wpcom-stats.php',
         'Automattic\\Jetpack\\Stats\\XMLRPC_Provider' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-stats/src/class-xmlrpc-provider.php',
         'Automattic\\Jetpack\\Status' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-status.php',
@@ -276,9 +278,9 @@ class ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ5_2_2::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ6_0_0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ6_0_0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb462338fb66be23595d68a93345c9e3d_jetpack_searchⓥ6_0_0::$classMap;
 
         }, null, ClassLoader::class);
     }
